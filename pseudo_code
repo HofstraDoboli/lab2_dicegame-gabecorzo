@@ -1,1 +1,23 @@
 Add your steps (pseudo-code) for the dice game here.
+
+Display welcome message and explanation of game
+Declare character variable that stores player's input
+Display start/exit message
+Process player's input:
+    If input is s, start game
+    If input is x, exit game and display exit message
+    Otherwise, display start/exit message again
+Declare two int variables
+Store two random numbers between 1 and 6 in variables
+Declare variable to store sum 
+Calculate sum of random values and initialize variable with value
+    If sum equals 7 or 11, display winning message
+    If sum equals 2, 3 or 12, display losing message 
+    Otherwise, sum becomes player’s point
+        Declare two int variables
+        Store two new random numbers between 1 and 6 in variables
+        Declare variable to store sum 
+        Calculate sum of random values and initialize variable with value
+            If sum equals player’s point value, display winning message 
+            If sum equals 7, display losing message
+            Otherwise, player rolls again until win/lose conditions met
