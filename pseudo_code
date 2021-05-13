@@ -1,1 +1,51 @@
 Add your steps (pseudo-code) for the dice game here.
+
+Display welcome message and explanation of game
+Declare character variable that stores player's input
+Display start/exit message
+Process player's input
+WHILE (input is 's' or 'S') // start a new game
+{
+    Declare int n1 and n2 
+    Initialize n1 and n2 to random numbers between 1 and 6
+    Declare int sum
+    Declare int variable sum and initialize it with n1 + n2    
+    Display n1 + n2 = sum
+    IF (sum equals 7 or 11) // win condition
+        Display win message
+    ELSE IF (sum equals 2 or 3 or 12) // loss condition
+        Display loss message
+    ELSE // point condition
+    {
+        Declare int variable called point
+        Initialize point to sum
+        Display point message
+        Declare bool not_win and not_loss
+        Initialize both to true
+        WHILE (not_win and not_loss are both true)
+        {
+            Initialize n1 and n2 to random numbers between 1 and 6
+            Calculate n1 + n2 and initialize sum with this value
+            Display n1 + n2 = sum
+            IF (sum equals 7)
+                Initialize not_loss to false
+            ELSE IF (sum equals point)
+                Initialize not_win to false
+        }END WHILE (not_win and not_loss are both true)
+        IF (not_loss equals false)
+            Display loss message
+        ELSE
+            Display win message
+    }
+    Display play again message
+    Process player's input
+}
+IF (input is 'x' or 'X') // exit the game
+{
+    Display exit message
+    Exit game
+}
+ELSE // ask again
+{
+    Display start/exit message again
+}
